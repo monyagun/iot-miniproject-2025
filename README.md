@@ -1,5 +1,5 @@
-# iot-miniproject-2025
-IOT 미니프로젝트 2025
+# miniproject-2025
+IoT 미니프로젝트 2025
 
 ## 미니프로젝트 2
 [링크](./miniproject2/README.md)
