@@ -99,6 +99,9 @@ ERD
 2. MainViewModel.cs 현재 Publish에 맞게 수정
     - BrokerIP, Topic...
 3. EntityFramework 사용, Database 테이블 모델화(DBFirst)
+    ```shell
+    PM> Scaffold-DbContext "Server=localhost;Database=miniproject;Uid=root;Password=*****;Charset=utf8" Pomelo.EntityFrameworkCore.MySql -OutputDir Models -Force -Context IoTDbContext
+    ```
 4. config.json 파일, 설정파일 로드 클래스 작업
 5. 구독 결과
 
@@ -121,8 +124,30 @@ ERD
     - SettingViewModel.cs 복사 후 이름 변경, 클래스명 변경
 10. ScheduleView 데이터그리드, 입력양식 수정
 
+11. EntityFramework용 패키지 설치
+    - Microsoft.EntityFrameworkCore
+    - Microsoft.EntityFrameworkCore.Tools
+    - Pomelo.EntityFrameworkCore.MySql
 
-#### 파이썬 AI + ASP.NET 연동
+12. ScheduleViewModel EntityFramework DB연동 처리
+
+    <img src="../image/mp0006.png" width="600">
+
+13. MonitoringView, MonitoringViewModel 생성
+14. WpfIotSimulatorApp 화면 이전
+15. Monitoring DB연동, MQTT통신, 애니메이션 작업
+16. MQTT로 전송된 공정 성공/실패여부 DB 저장작업
+    - 기본 IoT Simulator 애니메이션 가져오기
+    - 공정계획 순번으로 DB조회
+    - Start버튼 눌러서 IoT Simulator 동작시키고 동기화
+    - 체크이후 성공/실패 결과 DB에 저장, 실시간 시각화
+
+
+17. ReportView, ReportViewModel 작업
+
+
+
+#### 파이썬 AI + ASP.NET 연동(나중에)
 - 참조소스
 - iot-webapp-2025/ref/ReferencedSolution/ConvertWebApp 
 - hungout-with-springboot/003_aicombo/
