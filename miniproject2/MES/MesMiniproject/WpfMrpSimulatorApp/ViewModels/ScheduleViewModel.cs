@@ -163,7 +163,7 @@ namespace WpfMrpSimulatorApp.ViewModels
                                             SchEndTime = temp.sch.SchEndTime,
                                             SchFacilityId = temp.sch.SchFacilityId,
                                             SchFacilityName = setting2.CodeName,  // 두번째 조인에서 만든 값
-                                            SchAmount = temp.sch.SchAmount,
+                                            SchAmount = (int)temp.sch.SchAmount,
                                             RegDt = temp.sch.RegDt,
                                             ModDt = temp.sch.ModDt,
                                           }
